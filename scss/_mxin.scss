@@ -1,0 +1,20 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+@mixin font-line {
+    font-size: 20px;
+    line-height: 30px;
+    line-height: 100%;
+}
+@mixin wieght-height {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    line-height: 100%;
+}
+@mixin font16-24 {
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 100%;
+}
