@@ -459,6 +459,8 @@
     .skills {
         @include flex;
         flex-wrap: wrap;
+        justify-content: center ;
+        text-align: start;
         &-speaking {
             margin-right: 0;
             margin-left: 0px;
@@ -468,18 +470,49 @@
             }
             &__subtitle {
                 max-width: 258px;
-                
             }
         }
         &-card {
-            align-items: center;
+            @include flex;
+            justify-content: center;
+            &s {
+                @include flex;
+                justify-content: center;
+            }
             &__writing {
+                margin-top: 30px;
+                &--img {
+                    width: 204px;
+                    height: 204px;
+                    &__reading {
+                        width: 236px;
+                        height: 157px;
+                    }
+                }
+                &--subtitle {
+                    max-width: 258px;
+                    margin-bottom: 40px;
+                }
                 &--reading {
                     position: static;
                     margin-left: 0;
                 }
             }
+            &__listening {
+                &--img {
+                    width: 232px;
+                    height: 154px;
+                }
+                &--subtitle {
+                    max-width: 258px;
+                    margin-bottom: 40px;
+                }
+            }
         }
     }
 }
-
+@media only screen and(max-width:320px) {
+    .container {
+        max-width: 290px;
+    }
+}

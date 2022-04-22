@@ -1,0 +1,42 @@
+#about {
+    margin-top: 280px;
+    padding: 0 10px;
+}
+.about {
+    @include flex;
+    justify-content: space-between;
+    &-text {
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__title {
+            @include title;
+            text-align: start;
+            margin-bottom: -60px;
+        }
+        &__subtitle {
+            color: $main-brown;
+            @include font-line;
+            max-width: 635px;
+        }
+    }
+    &-card {
+        @include flex;
+        flex-direction: column;
+        &__margin {
+            margin: 0 120px;
+        }
+        &s {
+            @include flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        &__title {
+            @include title;
+        }
+        &__subtitle {
+            @include font-line;
+            color: $main-brown;
+        }
+    }
+}
