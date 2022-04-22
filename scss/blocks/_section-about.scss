@@ -245,3 +245,8 @@
         }
     }    
 }
+@media only screen and(max-width: 320px) {
+    .container {
+        max-width: 290px;
+    }
+}

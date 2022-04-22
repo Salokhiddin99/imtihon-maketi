@@ -1,0 +1,30 @@
+#pricing {
+    margin-top: 210px;
+    padding: 0 10px;
+}
+.pricing {
+    @include flex;
+    justify-content: space-between;
+    &-title {
+        @include title;
+    }
+    &-card {
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &__img {
+            width: 311px;
+            height: 311px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 48px;
+        }
+        &__subtitle {
+            max-width: 530px;
+            @include font-line;
+            color: $main-brown;
+        }
+    }
+}
