@@ -164,6 +164,7 @@
         }
     }
 }
+
 @media only screen and(max-width: 620px) {
     .container {
         max-width: 590px;
@@ -257,9 +258,9 @@
         }
     }
 }
-@media only screen and(max-width: 575px) {
+@media only screen and(max-width: 320px) {
     .container {
-        max-width: 510px;
+        max-width: 290px;
     }
     br {
         display: none
