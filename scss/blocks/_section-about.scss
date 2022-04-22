@@ -40,3 +40,80 @@
         }
     }
 }
+@media only screen and(max-width: 1170px) {
+    .container {
+        max-width: 1070px;
+    }
+    #about {
+        margin-top: 200px;
+    }
+    .about {
+        &-text {
+            &__title {
+                font-size: 42px;
+                margin-bottom: -30px;
+            }
+            &__subtitle {
+                font-size: 18px;
+                line-height: 26px;
+                max-width: 580px;
+            }
+        }
+        &-card {
+            &__margin {
+                margin: 0 65px;
+            }
+            &s {
+                margin-top: 40px;
+            }
+            &__title {
+                font-size: 42px
+            }
+            &__subtitle {
+                font-size: 18px;
+            }
+        }
+        &-img {
+            width: 418px;
+            height: 418px;
+        }
+    }    
+}
+@media only screen and(max-width: 992px) {
+    .container {
+        max-width: 929px;
+    }
+    #about {
+        margin-top: 106px;
+    }
+    .about {
+        &-text {
+            &__title {
+                font-size: 36px;
+                margin-bottom: -20px;
+            }
+            &__subtitle {
+                @include font16-24;
+                max-width: 530px;
+            }
+        }
+        &-card {
+            &__margin {
+                margin: 0 50px;
+            }
+            &s {
+                margin-top: 30px;
+            }
+            &__title {
+                font-size: 36px
+            }
+            &__subtitle {
+                @include font16-24;
+            }
+        }
+        &-img {
+            width: 336px;
+            height: 336px;
+        }
+    }    
+}
