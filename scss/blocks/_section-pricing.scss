@@ -5,6 +5,7 @@
 .pricing {
     @include flex;
     justify-content: space-between;
+    align-items: flex-end;
     &-title {
         @include title;
     }
@@ -12,19 +13,246 @@
         @include flex;
         flex-direction: column;
         align-items: flex-start;
-        &__img {
+        &__margin {
+            margin: 0 10px;
+        }
+        &__test {
             width: 311px;
             height: 311px;
+        }
+        &__lesson {
+            width: 391px;
+            height: 283px;
+        }
+        &__personal {
+            width: 340px;
+            height: 340px;
         }
         &__title {
             font-weight: 600;
             font-size: 30px;
             line-height: 48px;
+            margin-bottom: 19px;
         }
         &__subtitle {
-            max-width: 530px;
+            max-width: 420px;
             @include font-line;
             color: $main-brown;
+            margin-bottom: 30px;
+        }
+    }
+    &-sales {
+        width: 205px;
+        height: 45px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: $money-background;
+        border-radius: 5px;
+        &__title {
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: 400;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 27px;
+            color: #546269;
+            padding-top: 5px;
+        }
+    }
+}
+@media only screen and(max-width: 1175px) {
+    .container {
+        max-width: 1070px;
+    }
+    #pricing {
+        margin-top: 125px;
+    }
+    .pricing {
+        &-title {
+            font-size: 42px;
+        }
+        &-card {
+            &__test {
+                width: 266px;
+                height: 266px;
+            }
+            &__lesson {
+                width: 329px;
+                height: 239px;
+            }
+            &__personal {
+                width: 291px;
+                height: 291px;
+            }
+            &__title {
+                font-size: 26px;
+                line-height: 41px;
+                margin-bottom: 16px;
+            }
+            &__subtitle {
+                max-width: 420px;
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 992px) {
+    .container {
+        max-width: 929px;
+    }
+    .pricing {
+        &-title {
+            font-size: 36px;
+        }
+        &-card {
+            &__test {
+                width: 222px;
+                height: 222px;
+            }
+            &__lesson {
+                width: 267px;
+                height: 195px;
+            }
+            &__personal {
+                width: 242px;
+                height: 242px;
+            }
+            &__title {
+                font-size: 22px;
+                line-height: 34px;
+                margin-bottom: 14px;
+            }
+            &__subtitle {
+                max-width: 420px;
+                @include font16-24;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 920px) {
+    .container {
+        max-width: 850px;
+    }
+    .pricing {
+        &-title {
+            font-size: 30px;
+        }
+        &-card {
+            &__test {
+                width: 197px;
+                height: 197px;
+            }
+            &__lesson {
+                width: 219px;
+                height: 168px;
+            }
+            &__personal {
+                width: 210px;
+                height: 210px;
+            }
+            &__title {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &__subtitle {
+                max-width: 420px;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 690px) {
+    .container {
+        max-width: 600px;
+    }
+    .pricing {
+        @include flex;
+        flex-direction: column;
+        &-title {
+            font-size: 30px;
+            margin-top: 137px;
+            margin-bottom: 70px;
+        }
+        &-card {
+            text-align: center;
+            @include flex;
+            flex-direction: column;
+            &__margin {
+                margin: 90px 0;
+            }
+            &__test {
+                width: 291px;
+                height: 291px;
+            }
+            &__lesson {
+                width: 314px;
+                height: 241px;
+            }
+            &__personal {
+                width: 253px;
+                height: 253px;
+            }
+            &__title {
+                margin: 15px 0 21px 0;
+            }
+            &__subtitle {
+                font-size: 14px;
+                line-height: 21px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 320px) {
+    .container {
+        max-width: 290px;
+    }
+    .pricing {
+        &-title {
+            font-size: 24px;
+        }
+        &-card {
+            &__margin {
+                margin: 90px 0;
+            }
+            &__test {
+                width: 248px;
+                height: 248px;
+            }
+            &__lesson {
+                width: 257px;
+                height: 197px;
+            }
+            &__personal {
+                width: 241px;
+                height: 241px;
+            }
+            &__title {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            &__subtitle {
+                max-width: 290px;
+                font-size: 13px;
+                line-height: 19px;
+            }
+        }
+        &-sales {
+            width: 170px;
+            height: 37px;
+            &__title {
+                font-size: 18px;
+                line-height: 27px;
+            }
+            &__subtitle {
+                font-size: 14px;
+                line-height: 21px;
+            }
         }
     }
 }
