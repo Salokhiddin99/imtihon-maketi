@@ -69,7 +69,7 @@
     top: 0;
     display: none;
 	background-color: #FFFFFF;
-	width: 100%;
+	width: 60%;
 	height: 100vh;
 	transform: translateX(-800px);
 	box-shadow: 0 0 5px 1px rgb(38, 33, 33);
@@ -129,8 +129,9 @@ input:checked ~ .navbar {
         display: block;
     }
     .fa-xmark {
-        display: block;
+        display: none;
         margin-left: auto;
+        margin-right: 30px;
     }
     .navbar {
         display: block;
