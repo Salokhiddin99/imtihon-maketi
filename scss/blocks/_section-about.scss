@@ -54,8 +54,7 @@
                 margin-bottom: -30px;
             }
             &__subtitle {
-                font-size: 18px;
-                line-height: 26px;
+                @include font18-27;
                 max-width: 580px;
             }
         }
@@ -131,8 +130,7 @@
                 margin-bottom: 0px;
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
                 max-width: 321px;
             }
         }
@@ -147,8 +145,7 @@
                 font-size: 30px
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
             }
         }
         &-img {
@@ -191,8 +188,7 @@
                 font-size: 30px
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
             }
         }
         &-img {
@@ -217,8 +213,7 @@
                 text-align: center;
                 max-width: 290px;
                 margin-top: 42px;
-                font-size: 13px;
-                line-height: 19px;
+                @include font13-19
             }
         }
         &-card {
@@ -235,8 +230,7 @@
                 line-height: 40px;
             }
             &__subtitle {
-                font-size: 13px;
-                line-height: 19px;
+                @include font13-19;
             }
         }
         &-img {

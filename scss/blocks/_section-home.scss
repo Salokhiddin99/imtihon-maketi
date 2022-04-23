@@ -90,12 +90,10 @@
                 left: 300px;
             }
             &__subtitle {
-                font-size: 20px;
-                line-height: 30px;
+                @include font-line;
             }
             &__link {
-                font-size: 24px;
-                line-height: 36px;
+                @include wieght-height;
                 padding: 22px 78px;
             }
         }
@@ -120,8 +118,7 @@
                 left: 280px;
             }
             &__subtitle {
-                font-size: 18px;
-                line-height: 27px;
+                @include font18-27;
                 margin-bottom: 40px;
             }
             &__link {
@@ -153,12 +150,10 @@
                 left: 220px;
             }
             &__subtitle {
-                font-size: 16px;
-                line-height: 24px;
+                @include font16-24
             }
             &__link {
-                font-size: 18px;
-                line-height: 27px;
+                @include font18-27;
                 padding: 19px 67px;
             }
         }
@@ -186,8 +181,7 @@
                 left: 190px;
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
                 margin-bottom: 40px;
             }
             &__link {
@@ -224,14 +218,12 @@
                 display: none;
             }
             &__subtitle {
-                font-size: 16px;
-                line-height: 24px;
+                @include font16-24;
                 margin-bottom: 37px;
                 text-align: center;
             }
             &__link {
-                font-size: 18px;
-                line-height: 27px;
+                @include font18-27;
                 padding: 24px 101px;
             }
         }
@@ -275,12 +267,10 @@
             @include flex;
             &__title {
                 text-align: center;
-                font-size: 24px;
-                line-height: 36px;
+                @include wieght-height;
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
             }
             &__link {
                 font-size: 16px;

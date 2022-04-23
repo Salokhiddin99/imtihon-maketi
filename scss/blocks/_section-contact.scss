@@ -88,8 +88,7 @@
                 font-size: 30px;
             }
             &__subtitle {
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
                 margin: 0;
                 margin-bottom: 26px;
             }
@@ -150,7 +149,7 @@
         }
     }
 }
-@media only screen and(max-width:430px) {
+@media only screen and(max-width:450px) {
     .container {
         max-width: 370px;
     }

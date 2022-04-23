@@ -32,8 +32,7 @@
         &__link {
             @include button;
             font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
+            @include font18-27;
             padding: 16px 63px;
         }
     }
@@ -133,8 +132,7 @@
             }
             &--link {
                 padding: 16px 41px;
-                font-size: 18px;
-                line-height: 27px;
+                @include font18-27;
             }
         }
         &__listening {
@@ -185,8 +183,7 @@
             }
             &--subtitle {
                 max-width: 290px;
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
             }
         }
         &__listening {
@@ -197,8 +194,7 @@
             padding: 10px 20px 25px 25px;
             &--subtitle {
                 max-width: 290px;
-                font-size: 14px;
-                line-height: 21px;
+                @include font14-21;
             }
         }
     }
@@ -326,8 +322,7 @@
             }
             &__subtitle {
                 max-width: 197px;
-                font-size: 13px;
-                line-height: 19px;
+                @include font13-19;
                 margin-bottom: 60px;
             }
         }

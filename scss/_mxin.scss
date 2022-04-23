@@ -37,3 +37,15 @@
     line-height: 80px;
     color: $main-lightblack;
 }
+@mixin font18-27 {
+    font-size: 18px;
+    line-height: 27px;
+}
+@mixin font14-21 {
+    font-size: 14px;
+    line-height: 21px;
+}
+@mixin font13-19 {
+    font-size: 13px;
+    line-height: 19px;
+}

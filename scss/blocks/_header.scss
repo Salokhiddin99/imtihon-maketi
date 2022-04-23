@@ -33,8 +33,7 @@
         }
     }
     &__header--link {
-        font-weight: 400;
-        font-size: 24px;
+        @include wieght-height;
         color: $main-black;
         border: 2px solid $main-black;
         padding: 17px 57px;
@@ -110,8 +109,7 @@ input:checked ~ .navbar {
         }
         &__header--link {
             padding: 11px 40px;
-            font-size: 18px;
-            font-weight: 27px;
+            @include font18-27;
         }
     }
 }

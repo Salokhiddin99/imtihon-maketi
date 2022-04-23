@@ -34,8 +34,7 @@ footer {
             height: 45px;
         }
         &-link {
-            font-size: 13px;
-            line-height: 19px;
+            @include font13-19;
         }
     }
 }
